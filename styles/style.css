@@ -18,6 +18,7 @@ nav {
 
 nav a {
     color: #000000DE;
+    font-size: 14px;
 }
 
 nav ul {
@@ -48,4 +49,86 @@ nav ul img {
     text-decoration: none;
     box-shadow: rgba(99, 99, 99, 0.180) 0px 2px 8px 0px;
     background-color: #4589e2;
+}
+
+/* main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    align-items: center;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 580px;
+    border: solid rgba(231, 229, 229, 0.835) 1px;
+    border-radius: 25px;
+    margin-top: 27px;
+    margin-bottom: 20px;
+    height: 45px;
+}
+
+.searchbar img {
+    display: block;
+}
+
+.search-icon {
+    opacity: 0.4;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+.mic-button {
+    border: none;
+    background-color: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.mic-icon {
+    width: 25px;
+    height: 25px;
+    opacity: 0.6;
+}
+
+.searchbar:hover {
+    box-shadow: 0 1px 5px rgb(32 33 36 / 28%)
+}
+
+main input {
+    border: none;
+    outline: none;
+    width: 90%;
+    font-size: 16px;
+    color: #000000DE;
+}
+
+.search-button {
+    background-color: #F8F9FA;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    font-size: 14px;
+    color: #3c4043;
+    height: 36px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    border: 1px solid #dadce0;
+}
+
+
+@media (max-width: 670px) {
+    .searchbar {
+      width: 90%;
+    }
 }
